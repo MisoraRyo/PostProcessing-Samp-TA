@@ -1,0 +1,48 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	overscroll-behavior: none;
+	overflow: hidden;
+}
+canvas{
+	vertical-align: bottom;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+canvas:focus {outline: none;}
+canvas::selection{background-color:transparent}
+/* style */
+#title{
+    position: absolute;
+    top: 15px;left:20px;
+    z-index: 100;color: #222;font-size: 1.5em;
+}
+#btn-area{
+    position: absolute;
+    display: flex;
+    top: 50px;left:20px;
+}
+#Play-Btn{
+    z-index: 100;
+    font-size: min(4vw, 2em);
+}
+#Stop-Btn{
+    z-index: 100;
+    font-size: min(4vw, 2em);
+}
+.select_box{
+    position: absolute;
+    top: 100px;
+    left:20px;
+    z-index: 10;
+    font-size: min(2vw, 1em);
+}
+.select_box_text{
+    color: #222;
+    font-size: min(2vw, 1em);
+    margin: 0;
+}
+.is-active{
+    opacity: 0.6;
+}
