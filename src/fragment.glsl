@@ -78,9 +78,9 @@ void main() {
 	float B = texture2D(tDiffuse, uv + camerashake*uStepA + ( vec2(0.015 * timeFrac, 0.0) + NoiseBlock*timeFrac )*uStepC).b;
 	//float A = texture2D(tDiffuse, uv + vec2(0.015 * timeFrac, 0.0)*uStepC).a + texture2D(tDiffuse, uv + vec2(-0.015 * timeFrac, 0.0)*uStepC).a;
 	//
-	float RR = mix(R, col.r + uStep, (dispMask.r*uStep + uStep)*uStepB );
-	float GG = mix(G, col.g + uStep, (dispMask.g*uStep + uStep)*uStepB );
-	float BB = mix(B, col.b + uStep, (dispMask.b*uStep + uStep)*uStepB );
+	float RR = mix(R, col.r + dispMask.r*uStep*4.0, (dispMask.r + 1.1 )*uStep*uStepB );
+	float GG = mix(G, col.g + dispMask.r*uStep*4.0, (dispMask.r + 1.1 )*uStep*uStepB );
+	float BB = mix(B, col.b + dispMask.r*uStep*4.0, (dispMask.r + 1.1 )*uStep*uStepB );
 
 	////////////////////////////////////////////////////////////////////////////////////////
 	// 出力
