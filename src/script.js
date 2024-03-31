@@ -13,9 +13,9 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { ShaderPass } from './ShaderPass.js';
 
 import Vertex from "./vertex.glsl";
-//import c_Fragment from "./fragment_CameraShake.glsl"; //単体
-//import l_Fragment from "./fragment_LightLeak.glsl"; // 単体
-//import g_Fragment from "./fragment_Glitch.glsl"; // 単体
+//import c_Fragment from "./fragment_CameraShake.glsl"; //単体 CameraShake
+//import l_Fragment from "./fragment_LightLeak.glsl"; // 単体 LightLeak
+//import g_Fragment from "./fragment_Glitch.glsl"; // 単体 Glitch
 import Fragment from "./fragment.glsl"; // 3つまとめ
 
 const gui = new GUI({width:180});
