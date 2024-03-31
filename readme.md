@@ -4,6 +4,8 @@
 
 作品で使用したポストプロセッシング（CameraShake,LightLeak,Glitch）のサンプルサイトです。
 
+Sample sites of post-processing (CameraShake, LightLeak, Glitch) used in the work.
+
 ## Demo
 
 https://misora.main.jp/ea4azmyb/effects/
