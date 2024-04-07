@@ -1,4 +1,4 @@
-# Post-Processing Sample -TextaAlive-
+# Post-Processing Sample
 
 <img src="./static/image.jpg" width="100%"/>
 
